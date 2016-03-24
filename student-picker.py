@@ -1,7 +1,7 @@
 import random
 import sys
 
-students = ["Carlos A.", "Noah", "Angie", "Arvin", "Victor", "Andrew", "Timmy", "Martin", "AJ", "Brigette", "Marcos", "Jonathan", "Jobeth", "Max", "Carlos B.", "Trevor", "Joseph", "Jeffrey"]
+students = ["Carlos A.", "Noah", "Angie", "Arvin", "Victor", "Andrew", "Timmy", "Martin", "AJ", "Brigette", "Marcos", "Jonathan", "Jobeth", "Max", "Carlos B.", "Trevor", "Joseph"]
 
 # Groups
 if len(sys.argv) > 1 and sys.argv[1] == 'groups':
