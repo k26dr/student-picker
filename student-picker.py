@@ -1,22 +1,30 @@
 import random
 import sys
 
-students = ["Carlos A.", "Noah", "Angie", "Arvin", "Victor", "Andrew", "Timmy", "Martin", "AJ", "Brigette", "Marcos", "Jonathan", "Jobeth", "Max", "Carlos B.", "Trevor", "Joseph"]
+students = ["James", "Blair", "Cait", "Karla", "Shan", "Roy", "Zach", "Tin", "Mel"]
 
 # Groups
 if len(sys.argv) > 1 and sys.argv[1] == 'groups':
     random.shuffle(students)
     print("Group 1 (Javascript Jedis)")
-    print(students[0:4])
+    for student in students[0:4]:
+        print(student)
 
     print("\nGroup 2 (Carlton's Callbacks)")
-    print(students[4:8])
+    for student in students[4:8]:
+        print(student)
 
     print("\nGroup 3 (Infinite Loop)")
-    print(students[8:13])
+    for student in students[8:12]:
+        print(student)
 
-    print("\nGroup 4 (Beliebers)")
-    print(students[13:])
-    
+    print("\nGroup 4 (Sublime Dimes)")
+    for student in students[12:]:
+        print(student)
+
+elif len(sys.argv) > 1 and sys.argv[1] == 'list':
+    random.shuffle(students)
+    for s in students:
+        print(s)
 else:
     print(students[random.randrange(len(students))])
