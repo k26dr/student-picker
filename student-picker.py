@@ -1,7 +1,7 @@
 import random
 import sys
 
-students = ["James", "Blair", "Cait", "Karla", "Shan", "Roy", "Zach", "Tin", "Mel"]
+students = ["Michelle", "James", "Blair", "Cait", "Karla", "Shan", "Roy", "Zach", "Tin", "Mel"]
 
 # Groups
 if len(sys.argv) > 1 and sys.argv[1] == 'groups':
@@ -12,7 +12,7 @@ if len(sys.argv) > 1 and sys.argv[1] == 'groups':
 
     print("\nGroup 2 (Carlton's Callbacks)")
     for student in students[4:8]:
-        print(student)
+       print(student)
 
     print("\nGroup 3 (Infinite Loop)")
     for student in students[8:12]:
@@ -22,9 +22,12 @@ if len(sys.argv) > 1 and sys.argv[1] == 'groups':
     for student in students[12:]:
         print(student)
 
+# List
 elif len(sys.argv) > 1 and sys.argv[1] == 'list':
     random.shuffle(students)
     for s in students:
         print(s)
+
+# Pick Onne
 else:
     print(students[random.randrange(len(students))])
